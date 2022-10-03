@@ -1,5 +1,6 @@
 package com.example.internasyexternascalculadora
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -89,6 +90,11 @@ if (rb_Suma.isChecked==true){
         println("Elresultado de la suma es $sumarD")
 
     }
+fun btnSiguiente(Vista:View){
 
+    val VentanaSiguiente:Intent = Intent(applicationContext,ListViewApp::class.java)
+    startActivity(VentanaSiguiente)
+
+    }
 
 }
